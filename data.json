@@ -28,7 +28,9 @@
     ["Spider-Man: Homecoming", 2017],
     ["Underwater", 2020],
     ["A Quiet Place", 2018],
-    ["Signs", 2002]
+    ["Signs", 2002],
+    ["Raiders of the Lost Ark", 1982],
+    ["The Force Awakens", 2015]
   ],
   "links": [
     [
@@ -82,13 +84,19 @@
     [
       "Atlantis: The Lost Empire",
       "Avatar",
-      "Captain Scary White Man vs. Indigenous population."
+      "Captain Scary White Man vs. Indigenous population. Butch Latina pilot/driver/mechanic."
     ],
     ["A Quiet Place", "Signs", "Corn."],
     [
       "Alien: Covenant",
       "Sunshine",
       "There is an unidentified life form on the ship."
+    ],
+    ["Aliens", "Life", "Setting off the sprinkler system."],
+    [
+      "The Force Awakens",
+      "Raiders of the Lost Ark",
+      "Big ball rolling toward you."
     ]
   ]
 }
