@@ -24,7 +24,9 @@ const svg = d3.select('#graph')
 d3.json('./data.json').then(function(rawData) {
   const data = {
     links: rawData.links.map(([source, target]) => ({ source, target })),
-    nodes: rawData.nodes.sort(({ year: year1 }, { year: year2 }) => year1 - year2)
+    nodes: rawData.nodes
+      .map(([name, year]) => ({ name, year }))
+      .sort(({ year: year1 }, { year: year2 }) => year1 - year2)
   } 
 
   const allNodes = data.nodes.map(d => d.name)
