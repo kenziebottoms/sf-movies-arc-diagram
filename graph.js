@@ -23,7 +23,7 @@ const svg = d3.select('#graph')
 // eslint-disable-next-line max-len
 d3.json('./data.json').then(function(rawData) {
   const data = {
-    links: rawData.links,
+    links: rawData.links.map(([source, target]) => ({ source, target })),
     nodes: rawData.nodes.sort(({ year: year1 }, { year: year2 }) => year1 - year2)
   } 
 

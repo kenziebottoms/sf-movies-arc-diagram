@@ -3,11 +3,13 @@
     { "name": "Life", "year": 2017 },
     { "name": "The Abyss", "year": 1989 },
     { "name": "Pacific Rim", "year": 2013 },
-    { "name": "The Thing", "year": 1982 }
+    { "name": "The Thing", "year": 1982 },
+    { "name": "Alien", "year": 1979 }
   ],
   "links": [
-    { "source": "The Abyss", "target": "Life" },
-    { "source": "The Abyss", "target": "Pacific Rim" },
-    { "source": "The Thing", "target": "Life" }
+    ["The Abyss", "Life"],
+    ["The Abyss", "Pacific Rim"],
+    ["The Thing", "Life"],
+    ["Alien", "Life"]
   ]
 }
