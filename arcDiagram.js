@@ -28,7 +28,7 @@ d3.json('./data.json').then(function(rawData) {
   const circleMarginLeft = 20
   const circleX = labelColWidth + labelMarginLeft + circleMarginLeft
 
-  const allNodes = data.nodes.map(d => d.name)
+  const allNodes = data.nodes.map((d) => d.name)
 
   // A linear scale to position the nodes on the X axis
   const y = d3.scalePoint()
@@ -41,7 +41,7 @@ d3.json('./data.json').then(function(rawData) {
     .data(data.nodes)
     .join('circle')
     .attr('cx', circleX)
-    .attr('cy', d => y(d.name))
+    .attr('cy', (d) => y(d.name))
     .attr('r', 8)
     .style('fill', '#69b3a2')
   
@@ -52,7 +52,7 @@ d3.json('./data.json').then(function(rawData) {
     .join('text')
     // The right alignment of the label
     .attr('x', labelColWidth + labelMarginLeft)
-    .attr('y', d => y(d.name) + 5)
+    .attr('y', (d) => y(d.name) + 5)
     .text(({ name, year }) => `${name} (${year})`)
     .style('text-anchor', 'end')
     .style('font-family', 'monospace')
@@ -71,7 +71,7 @@ d3.json('./data.json').then(function(rawData) {
     .selectAll('mylinks')
     .data(data.links)
     .join('path')
-    .attr('d', d => {
+    .attr('d', (d) => {
       const start = y(nameHash[d.source].name) // X position of start node on the X axis
       const end = y(nameHash[d.target].name) // X position of end node
       return [
@@ -106,8 +106,8 @@ d3.json('./data.json').then(function(rawData) {
       d3.select(this).style('fill', '#69b3b2')
       // Highlight the connections
       links
-        .style('stroke', a => a.source === d.name || a.target === d.name ? '#69b3b2' : '#b8b8b8')
-        .style('stroke-width', a => a.source === d.name || a.target === d.name ? 4 : 1)
+        .style('stroke', (a) => a.source === d.name || a.target === d.name ? '#69b3b2' : '#b8b8b8')
+        .style('stroke-width', (a) => a.source === d.name || a.target === d.name ? 4 : 1)
     })
     .on('mouseout', function(_event, _d){
       nodes.style('fill', '#69b3a2')

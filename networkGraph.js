@@ -12,8 +12,6 @@ const networkSvg = d3.select(NETWORK_DIV_ID)
   .append('g')
   .attr('transform', `translate(${NETWORK_MARGIN},${NETWORK_MARGIN})`)
 
-// Read dummy data
-// eslint-disable-next-line max-len
 d3.json('./data.json').then(function(rawData) {
   const data = {
     links: rawData.links.map(([source, target]) => ({ source, target })),
@@ -22,97 +20,63 @@ d3.json('./data.json').then(function(rawData) {
       .sort(({ year: year1 }, { year: year2 }) => year1 - year2)
   }
 
-  const maxNameLen = Math.max(...rawData.nodes.map(([name, _year]) => name.length))
-  const labelColWidth = maxNameLen * 8
-  const labelMarginLeft = 20
-  const circleMarginLeft = 20
-  const circleX = labelColWidth + labelMarginLeft + circleMarginLeft
-
-  const allNodes = data.nodes.map(d => d.name)
-
-  // A linear scale to position the nodes on the X axis
-  const y = d3.scalePoint()
-    .range([0, window.innerHeight - NETWORK_MARGIN * 2])
-    .domain(allNodes)
+  // Initialize the links
+  const link = networkSvg
+    .selectAll('line')
+    .data(data.links)
+    .join('line')
+    .style('stroke', '#aaa')
   
-  // Add the circle for the nodes
-  const nodes = networkSvg
-    .selectAll('mynodes')
+  // Initialize the nodes
+  const node = networkSvg
+    .selectAll('circle')
     .data(data.nodes)
     .join('circle')
-    .attr('cx', circleX)
-    .attr('cy', d => y(d.name))
-    .attr('r', 8)
+    .attr('r', 10)
     .style('fill', '#69b3a2')
-  
-  // And give them a label
-  networkSvg
-    .selectAll('mylabels')
+
+  const label = networkSvg.append('g')
+    .attr('class', 'labels')
+    .selectAll('text')
     .data(data.nodes)
-    .join('text')
-    // The right alignment of the label
-    .attr('x', labelColWidth + labelMarginLeft)
-    .attr('y', d => y(d.name) + 5)
-    .text(({ name, year }) => `${name} (${year})`)
-    .style('text-anchor', 'end')
+    .enter().append('text')
+    .style('font-size', '10px')
     .style('font-family', 'monospace')
-    .style('font-size', '15px')
+    .attr('class', 'label')
+    .style('background-color', '#ffffff')
+    .text((d) => d.name)
   
-  /*
-   * Add links between nodes. Here is the tricky part.
-   * In my input data, links are provided between nodes -id-, NOT between node names.
-   * So I have to do a link between this id and the name
-   */
-  const nameHash = {}
-  data.nodes.forEach((n) => nameHash[n.name] = n)
+  // Let's list the force we wanna apply on the network
+  d3.forceSimulation(data.nodes) // Force algorithm is applied to data.nodes
+    .force(
+      'link', 
+      d3.forceLink() // This force provides links between nodes
+        .id((d) => d.name) // This provide  the id of a node
+        .links(data.links) // and this the list of links
+        .distance(100)
+    )
+    .force(
+      'charge',
+      d3.forceManyBody()
+        .strength(-70)
+    ) // This adds repulsion between nodes. Play with the -400 for the repulsion strength
+    .force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2)) // This force attracts nodes to the center of the svg area
+    .on('end', ticked)
   
-  // Add the links
-  const links = networkSvg
-    .selectAll('mylinks')
-    .data(data.links)
-    .join('path')
-    .attr('d', d => {
-      const start = y(nameHash[d.source].name) // X position of start node on the X axis
-      const end = y(nameHash[d.target].name) // X position of end node
-      return [
-        'M',
-        circleX,
-        // the arc starts at the coordinate x=start, y=height-30 (where the starting node is)
-        start,
-        // This means we're gonna build an elliptical arc
-        'A',
-        start - end,
-        // Next 2 lines are the coordinates of the inflexion point. Height of this point is proportional with start - end distance
-        ',',
-        (start - end) / 2,
-        0,
-        0,
-        ',',
-        start < end ? 1 : 0,
-        circleX,
-        ',',
-        // We always want the arc on top. So if end is before start, putting 0 here turn the arc upside down.
-        end
-      ] .join(' ')
-    })
-    .style('fill', 'none')
-    .attr('stroke', 'black')
+  // This function is run at each iteration of the force algorithm, updating the nodes position.
+  function ticked() {
+    link
+      .attr('x1', (d) => d.source.x)
+      .attr('y1', (d) => d.source.y)
+      .attr('x2', (d) => d.target.x)
+      .attr('y2', (d) => d.target.y)
   
-  // Add the highlighting functionality
-  nodes
-    .on('mouseover', function(event, d){
-      // Highlight the nodes: every node is green except of him
-      nodes.style('fill', '#B8B8B8')
-      d3.select(this).style('fill', '#69b3b2')
-      // Highlight the connections
-      links
-        .style('stroke', a => a.source === d.name || a.target === d.name ? '#69b3b2' : '#b8b8b8')
-        .style('stroke-width', a => a.source === d.name || a.target === d.name ? 4 : 1)
-    })
-    .on('mouseout', function(_event, _d){
-      nodes.style('fill', '#69b3a2')
-      links
-        .style('stroke', 'black')
-        .style('stroke-width', '1')
-    })
+    node
+      .attr('cx', (d) => d.x)
+      .attr('cy', (d) => d.y)
+
+    label
+      .attr('x', (d) => d.x + 16)
+      .attr('y', (d) => d.y + 4)
+  }
 })
