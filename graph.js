@@ -1,23 +1,15 @@
 /* global d3 */
 /* eslint-disable max-len */
 
-// set the dimensions and margins of the graph
-const margin = {
-  top: 20,
-  right: 30,
-  bottom: 20,
-  left: 30
-}
-const width = 1200 - margin.left - margin.right
-const height = 600 - margin.top - margin.bottom
+
 
 // append the svg object to the body of the page
 const svg = d3.select('#graph')
   .append('svg')
-  .attr('width', width + margin.left + margin.right)
-  .attr('height', height + margin.top + margin.bottom)
+  .attr('width', window.innerWidth)
+  .attr('height', window.innerHeight)
   .append('g')
-  .attr('transform', `translate(${margin.left},${margin.top})`)
+  .attr('transform', `translate(${50},${50})`)
 
 // Read dummy data
 // eslint-disable-next-line max-len
@@ -33,7 +25,7 @@ d3.json('./data.json').then(function(rawData) {
 
   // A linear scale to position the nodes on the X axis
   const y = d3.scalePoint()
-    .range([0, height])
+    .range([0, window.innerHeight - 100])
     .domain(allNodes)
   
   // Add the circle for the nodes
