@@ -1,7 +1,13 @@
 {
   "nodes": [
-    { "id": 1, "name": "A" },
-    { "id": 2, "name": "B" }
+    { "name": "Life", "year": 2017 },
+    { "name": "The Abyss", "year": 1989 },
+    { "name": "Pacific Rim", "year": 2013 },
+    { "name": "The Thing", "year": 1982 }
   ],
-  "links": [{ "source": 1, "target": 2 }]
+  "links": [
+    { "source": "The Abyss", "target": "Life" },
+    { "source": "The Abyss", "target": "Pacific Rim" },
+    { "source": "The Thing", "target": "Life" }
+  ]
 }

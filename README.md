@@ -1,3 +1,4 @@
-Sample code from [D3 docs: Arc diagrams](https://www.d3-graph-gallery.com/graph/arc_vertical.html)
-
-Sample JSON from [D3 docs: Data format](https://www.d3-graph-gallery.com/graph/network_data_format.html)
+Sample code from D3 docs:
+- [Vertical arc diagram](https://www.d3-graph-gallery.com/graph/arc_vertical.html)
+- [Clean arc diagram template](https://www.d3-graph-gallery.com/graph/arc_template.html)
+- [Basic arc diagram template](https://www.d3-graph-gallery.com/graph/arc_basic.html)
