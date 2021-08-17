@@ -6,15 +6,19 @@
     margin: auto;
   }
   * {
+    overflow-x: hidden;
+  }
+  #network, #arc {
+    height: 100vh;
     overflow: hidden;
   }
 </style>
 
 
-<!-- Load d3.js -->
 <script src="https://d3js.org/d3.v6.js"></script>
 
-<!-- Create a div where the graph will take place -->
-<div id="graph"></div>
+<div id="network"></div>
+<div id="arc"></div>
 
-<script src="./graph.js"></script>
+<script src="./arcDiagram.js"></script>
+<script src="./networkGraph.js"></script>

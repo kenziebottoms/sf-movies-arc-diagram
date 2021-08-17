@@ -1,13 +1,16 @@
 /* global d3 */
 /* eslint-disable max-len */
 
+const ARC_DIV_ID = '#arc'
+const ARC_MARGIN = 50
+
 // append the svg object to the body of the page
-const svg = d3.select('#graph')
+const arcSvg = d3.select(ARC_DIV_ID)
   .append('svg')
   .attr('width', window.innerWidth)
   .attr('height', window.innerHeight)
   .append('g')
-  .attr('transform', `translate(${50},${50})`)
+  .attr('transform', `translate(${ARC_MARGIN},${ARC_MARGIN})`)
 
 // Read dummy data
 // eslint-disable-next-line max-len
@@ -29,11 +32,11 @@ d3.json('./data.json').then(function(rawData) {
 
   // A linear scale to position the nodes on the X axis
   const y = d3.scalePoint()
-    .range([0, window.innerHeight - 100])
+    .range([0, window.innerHeight - ARC_MARGIN * 2])
     .domain(allNodes)
   
   // Add the circle for the nodes
-  const nodes = svg
+  const nodes = arcSvg
     .selectAll('mynodes')
     .data(data.nodes)
     .join('circle')
@@ -43,7 +46,7 @@ d3.json('./data.json').then(function(rawData) {
     .style('fill', '#69b3a2')
   
   // And give them a label
-  svg
+  arcSvg
     .selectAll('mylabels')
     .data(data.nodes)
     .join('text')
@@ -64,7 +67,7 @@ d3.json('./data.json').then(function(rawData) {
   data.nodes.forEach((n) => nameHash[n.name] = n)
   
   // Add the links
-  const links = svg
+  const links = arcSvg
     .selectAll('mylinks')
     .data(data.links)
     .join('path')
@@ -112,14 +115,4 @@ d3.json('./data.json').then(function(rawData) {
         .style('stroke', 'black')
         .style('stroke-width', '1')
     })
-  
-  
-  // text hover nodes
-  svg
-    .append('text')
-    .attr('text-anchor', 'middle')
-    .style('fill', '#B8B8B8')
-    .style('font-size', '17px')
-    .attr('x', 50)
-    .attr('y', 10)
 })
