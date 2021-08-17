@@ -16,7 +16,6 @@
     ["Terminator", 1984],
     ["Terminator 2", 1991],
     ["Alien 3", 1993],
-    ["Alien: Resurrection", 1997],
     ["Edge of Tomorrow", 2014],
     ["Predator", 1987],
     ["Stargate", 1994],
@@ -25,7 +24,13 @@
     ["The Meg", 2018],
     ["Get Out", 2017],
     ["World War Z", 2013],
-    ["28 Days Later", 2002]
+    ["28 Days Later", 2002],
+    ["Jupiter Ascending", 2017],
+    ["Donnie Darko", 2001],
+    ["Sky High", 2005],
+    ["Spider-Man: Homecoming", 2017],
+    ["The Cabin in the Woods", 2011],
+    ["Underwater", 2020]
   ],
   "links": [
     ["The Abyss", "Life"],
@@ -42,6 +47,13 @@
     ["Stargate", "Atlantis: The Lost Empire"],
     ["Deep Blue Sea", "The Meg"],
     ["World War Z", "28 Days Later"],
-    ["The Abyss", "Alien: Covenant"]
+    ["The Abyss", "Alien: Covenant"],
+    ["Aliens", "Jupiter Ascending"],
+    ["Treasure Planet", "Aliens"],
+    ["Jupiter Ascending", "Treasure Planet"],
+    ["Get Out", "Donnie Darko"],
+    ["Spider-Man: Homecoming", "Sky High"],
+    ["Alien: Covenant", "The Abyss"],
+    ["The Abyss", "Underwater"]
   ]
 }
