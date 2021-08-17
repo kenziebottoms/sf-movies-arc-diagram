@@ -1,12 +1,12 @@
 /* global d3 */
 
 // set the dimensions and margins of the graph
-var margin = { top: 20, right: 30, bottom: 20, left: 30 },
+const margin = { top: 20, right: 30, bottom: 20, left: 30 },
   width = 450 - margin.left - margin.right,
   height = 300 - margin.top - margin.bottom
 
 // append the svg object to the body of the page
-var svg = d3.select('#graph')
+const svg = d3.select('#graph')
   .append('svg')
   .attr('width', width + margin.left + margin.right)
   .attr('height', height + margin.top + margin.bottom)
@@ -19,12 +19,12 @@ var svg = d3.select('#graph')
 d3.json('./data.json', function(data) {
 
   // List of node names
-  var allNodes = data.nodes.map(function(d){
+  const allNodes = data.nodes.map(function(d){
     return d.name
   })
 
   // A linear scale to position the nodes on the X axis
-  var y = d3.scalePoint()
+  const y = d3.scalePoint()
     .range([0, height])
     .domain(allNodes)
 
@@ -63,7 +63,7 @@ d3.json('./data.json', function(data) {
    * NOT between node names.
    * So I have to do a link between this id and the name
    */
-  var idToNode = {}
+  const idToNode = {}
   data.nodes.forEach(function (n) {
     idToNode[n.id] = n
   })
@@ -80,9 +80,9 @@ d3.json('./data.json', function(data) {
     .append('path')
     .attr('d', function (d) {
       // X position of start node on the X axis
-      let start = y(idToNode[d.source].name)
+      const start = y(idToNode[d.source].name)
       // X position of end node
-      let end = y(idToNode[d.target].name) 
+      const end = y(idToNode[d.target].name) 
       return ['M',
         50,
         /** 
