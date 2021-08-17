@@ -53,7 +53,7 @@ d3.json('./data.json').then(function(rawData) {
       d3.forceLink() // This force provides links between nodes
         .id((d) => d.name) // This provide  the id of a node
         .links(data.links) // and this the list of links
-        .distance(100)
+        .distance(150)
     )
     .force(
       'charge',
