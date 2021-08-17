@@ -7,7 +7,25 @@
     ["Alien", 1979],
     ["TRON: Legacy", 2010],
     ["Treasure Planet", 2005],
-    ["Alien vs. Predator", 2004]
+    ["Alien vs. Predator", 2004],
+    ["Sunshine", 2007],
+    ["Alien: Covenant", 2017],
+    ["Prometheus", 2012],
+    ["Avatar", 2009],
+    ["Aliens", 1986],
+    ["Terminator", 1984],
+    ["Terminator 2", 1991],
+    ["Alien 3", 1993],
+    ["Alien: Resurrection", 1997],
+    ["Edge of Tomorrow", 2014],
+    ["Predator", 1987],
+    ["Stargate", 1994],
+    ["Atlantis: The Lost Empire", 2001],
+    ["Deep Blue Sea", 1999],
+    ["The Meg", 2018],
+    ["Get Out", 2017],
+    ["World War Z", 2013],
+    ["28 Days Later", 2002]
   ],
   "links": [
     ["The Abyss", "Life"],
@@ -16,6 +34,14 @@
     ["Alien", "Life"],
     ["Treasure Planet", "TRON: Legacy"],
     ["The Thing", "Alien vs. Predator"],
-    ["Alien", "Alien vs. Predator"]
+    ["Sunshine", "Life"],
+    ["Aliens", "Avatar"],
+    ["Terminator 2", "Alien 3"],
+    ["Terminator 2", "Edge of Tomorrow"],
+    ["Aliens", "Edge of Tomorrow"],
+    ["Stargate", "Atlantis: The Lost Empire"],
+    ["Deep Blue Sea", "The Meg"],
+    ["World War Z", "28 Days Later"],
+    ["The Abyss", "Alien: Covenant"]
   ]
 }

@@ -1,8 +1,6 @@
 /* global d3 */
 /* eslint-disable max-len */
 
-
-
 // append the svg object to the body of the page
 const svg = d3.select('#graph')
   .append('svg')
@@ -19,7 +17,13 @@ d3.json('./data.json').then(function(rawData) {
     nodes: rawData.nodes
       .map(([name, year]) => ({ name, year }))
       .sort(({ year: year1 }, { year: year2 }) => year1 - year2)
-  } 
+  }
+
+  const maxNameLen = Math.max(...rawData.nodes.map(([name, _year]) => name.length))
+  const labelColWidth = maxNameLen * 8
+  const labelMarginLeft = 20
+  const circleMarginLeft = 20
+  const circleX = labelColWidth + labelMarginLeft + circleMarginLeft
 
   const allNodes = data.nodes.map(d => d.name)
 
@@ -33,7 +37,7 @@ d3.json('./data.json').then(function(rawData) {
     .selectAll('mynodes')
     .data(data.nodes)
     .join('circle')
-    .attr('cx', 150)
+    .attr('cx', circleX)
     .attr('cy', d => y(d.name))
     .attr('r', 8)
     .style('fill', '#69b3a2')
@@ -43,10 +47,13 @@ d3.json('./data.json').then(function(rawData) {
     .selectAll('mylabels')
     .data(data.nodes)
     .join('text')
-    .attr('x', 50)
+    // The right alignment of the label
+    .attr('x', labelColWidth + labelMarginLeft)
     .attr('y', d => y(d.name) + 5)
     .text(({ name, year }) => `${name} (${year})`)
-    .style('text-anchor', 'middle')
+    .style('text-anchor', 'end')
+    .style('font-family', 'monospace')
+    .style('font-size', '15px')
   
   /*
    * Add links between nodes. Here is the tricky part.
@@ -66,22 +73,24 @@ d3.json('./data.json').then(function(rawData) {
       const end = y(nameHash[d.target].name) // X position of end node
       return [
         'M',
-        150,
-        start, // the arc starts at the coordinate x=start, y=height-30 (where the starting node is)
-        'A', // This means we're gonna build an elliptical arc
+        circleX,
+        // the arc starts at the coordinate x=start, y=height-30 (where the starting node is)
+        start,
+        // This means we're gonna build an elliptical arc
+        'A',
         start - end,
-        ',', // Next 2 lines are the coordinates of the inflexion point. Height of this point is proportional with start - end distance
+        // Next 2 lines are the coordinates of the inflexion point. Height of this point is proportional with start - end distance
+        ',',
         (start - end) / 2,
         0,
         0,
         ',',
         start < end ? 1 : 0,
-        150,
+        circleX,
         ',',
         // We always want the arc on top. So if end is before start, putting 0 here turn the arc upside down.
         end
-      ]
-        .join(' ')
+      ] .join(' ')
     })
     .style('fill', 'none')
     .attr('stroke', 'black')
