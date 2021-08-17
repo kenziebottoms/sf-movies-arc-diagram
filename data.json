@@ -4,12 +4,18 @@
     ["The Abyss", 1989],
     ["Pacific Rim", 2013],
     ["The Thing", 1982],
-    ["Alien", 1979]
+    ["Alien", 1979],
+    ["TRON: Legacy", 2010],
+    ["Treasure Planet", 2005],
+    ["Alien vs. Predator", 2004]
   ],
   "links": [
     ["The Abyss", "Life"],
     ["The Abyss", "Pacific Rim"],
     ["The Thing", "Life"],
-    ["Alien", "Life"]
+    ["Alien", "Life"],
+    ["Treasure Planet", "TRON: Legacy"],
+    ["The Thing", "Alien vs. Predator"],
+    ["Alien", "Alien vs. Predator"]
   ]
 }
