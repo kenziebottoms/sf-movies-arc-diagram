@@ -40,7 +40,7 @@ d3.json('./data.json').then(function(rawData) {
     .selectAll('text')
     .data(data.nodes)
     .enter().append('text')
-    .style('font-size', '10px')
+    .style('font-size', '12px')
     .style('font-family', 'monospace')
     .attr('class', 'label')
     .style('background-color', '#ffffff')
@@ -55,12 +55,17 @@ d3.json('./data.json').then(function(rawData) {
         .links(data.links) // and this the list of links
         .distance(150)
     )
+    // This adds repulsion between nodes. Play with the -400 for the repulsion strength
     .force(
       'charge',
       d3.forceManyBody()
-        .strength(-70)
-    ) // This adds repulsion between nodes. Play with the -400 for the repulsion strength
-    .force('center', d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2)) // This force attracts nodes to the center of the svg area
+        .strength(-150)
+    )
+    // This force attracts nodes to the center of the svg area
+    .force(
+      'center',
+      d3.forceCenter(window.innerWidth / 2, window.innerHeight / 2)
+    )
     .on('end', ticked)
   
   // This function is run at each iteration of the force algorithm, updating the nodes position.
