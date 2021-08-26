@@ -17,90 +17,148 @@
     ["Edge of Tomorrow", 2014],
     ["Stargate", 1994],
     ["Atlantis: The Lost Empire", 2001],
-    ["Deep Blue Sea", 1999],
-    ["The Meg", 2018],
     ["Get Out", 2017],
     ["World War Z", 2013],
     ["28 Days Later", 2002],
     ["Jupiter Ascending", 2017],
     ["Donnie Darko", 2001],
     ["Sky High", 2005],
-    ["Spider-Man: Homecoming", 2017],
-    ["Underwater", 2020],
     ["A Quiet Place", 2018],
     ["Signs", 2002],
     ["Raiders of the Lost Ark", 1982],
-    ["The Force Awakens", 2015]
+    ["The Force Awakens", 2015],
+    ["Spider-Man", 2002],
+    ["Stranger Things (1)", 2016],
+    ["Looper", 2012]
   ],
   "links": [
     [
       "The Abyss",
       "Life",
-      "Defib crew member and alien. White rat. Freezing as you run out of oxygen."
+      [
+        "Defib crew member and alien.",
+        "White rat.",
+        "Freezing as you run out of oxygen."
+      ]
     ],
     [
       "The Abyss",
       "Pacific Rim",
-      "Large unseen thing approaches quickly on radar."
+      ["Large unseen thing approaches quickly on radar."]
     ],
-    ["The Thing", "Life", "Unsuccessfully attack the alien with defib irons."],
-    ["Alien", "Life"],
-    ["Treasure Planet", "TRON: Legacy", "The whole opening chase scene."],
-    ["The Thing", "Alien vs. Predator", "Antarctic horror feat. explosions."],
-    ["Sunshine", "Life", "Coolant (weak)."],
+    [
+      "The Thing",
+      "Life",
+      ["Unsuccessfully attack the alien with defib irons."]
+    ],
+    [
+      "Alien",
+      "Life",
+      [
+        "An alien enters a man's body through his mouth and kills him by violently exiting it.",
+        "Each human death transforms the creature into something bigger, smarter, and more dangerous."
+      ]
+    ],
+    ["Treasure Planet", "TRON: Legacy", ["The whole opening chase scene."]],
+    ["The Thing", "Alien vs. Predator", ["Antarctic horror feat. explosions."]],
+    ["Sunshine", "Life", ["Coolant (weak)."]],
     [
       "Aliens",
       "Avatar",
-      "Mecha suits. Unprofessional marines here to kill aliens. Money undercutting science."
+      [
+        "Mecha suits vs. aliens.",
+        "Unprofessional marines here to kill aliens.",
+        "Money undercutting science."
+      ]
     ],
-    ["Terminator 2", "Alien 3", "Dangling by a chain over lava."],
+    ["Terminator 2", "Alien 3", ["Dangling by a chain over lava."]],
     [
       "Terminator 2",
       "Edge of Tomorrow",
-      "Woman in kevlar holding a big ass button."
+      ["Woman in kevlar holding a big ass button."]
     ],
     [
       "Aliens",
       "Edge of Tomorrow",
-      "Bill Paxton. Unprofessional marines here to kill aliens."
+      ["Bill Paxton.", "Unprofessional marines here to kill aliens."]
     ],
-    ["Stargate", "Atlantis: The Lost Empire"],
-    ["Deep Blue Sea", "The Meg"],
+    [
+      "Stargate",
+      "Atlantis: The Lost Empire",
+      [
+        "A nerd gives a presentation on Atlantis, with a chalkboard map, to a bunch of skeptical, abusive academics."
+      ]
+    ],
     [
       "World War Z",
       "28 Days Later",
-      "Grabbing soft drinks out of a busted vending machine before/after fleeing zombies."
+      [
+        "Grabbing soft drinks out of a busted vending machine before/after fleeing zombies."
+      ]
     ],
-    ["Aliens", "Jupiter Ascending", "The planet collapses all around us."],
-    ["Treasure Planet", "Aliens", "The planet collapses all around us."],
+    [
+      "Aliens",
+      "Jupiter Ascending",
+      ["The planet explodes and collapses all around us."]
+    ],
+    [
+      "Treasure Planet",
+      "Aliens",
+      ["The planet explodes and collapses all around us."]
+    ],
     [
       "Jupiter Ascending",
       "Treasure Planet",
-      "The planet collapses all around us, and also somebody space-skates out of it."
+      [
+        "The planet explodes collapses all around us, and you space-skate out of it."
+      ]
     ],
-    ["Get Out", "Donnie Darko", "Disassociation. Bad family vibes."],
-    ["Spider-Man: Homecoming", "Sky High"],
-    ["The Abyss", "Underwater"],
+    ["Get Out", "Donnie Darko", ["Disassociation. Bad family vibes."]],
     [
       "Atlantis: The Lost Empire",
       "Avatar",
-      "Captain Scary White Man vs. Indigenous population. Butch Latina pilot/driver/mechanic."
+      [
+        "Captain Scary White Man vs. Indigenous population.",
+        "Butch Latina pilot/driver/mechanic.",
+        "Language criticism from a practical learner to a book learner."
+      ]
     ],
-    ["A Quiet Place", "Signs", "Corn."],
+    ["A Quiet Place", "Signs", ["Corn."]],
     [
       "Alien: Covenant",
       "Sunshine",
-      "There is an unidentified life form on the ship."
+      ["There is an unidentified life form on the ship."]
     ],
     [
       "Aliens",
       "Life",
-      "Setting off the sprinkler system. \"How smart is this thing?\""
+      ["Setting off the sprinkler system.", "\"How smart is this thing?\""]
     ],
     [
       "The Force Awakens",
       "Raiders of the Lost Ark",
-      "Big ball rolling toward you."
+      ["Big ball rolling toward you."]
+    ],
+    [
+      "Sky High",
+      "Spider-Man",
+      [
+        "Bruce Campbell yelling at people while they fight.",
+        "Somebody starting a fight with a lunch tray.",
+        "Somebody punching a locker after missing a person."
+      ]
+    ],
+    [
+      "Stranger Things (1)",
+      "A Quiet Place",
+      ["An alien whose face opens up.", "Significant strings of lightbulbs."]
+    ],
+    [
+      "A Quiet Place",
+      "Looper",
+      [
+        "Emily Blunt waving shotguns around on a farm while trying to keep her children safe."
+      ]
     ]
   ]
 }
