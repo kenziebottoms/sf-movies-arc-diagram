@@ -45,6 +45,7 @@ d3.json('./data.json').then(function(rawData) {
     .data(data.links)
     .join('line')
     .style('stroke', '#aaa')
+    .style('stroke-width', (d) => d.value)
   
   // Initialize the nodes
   const node = networkSvg
