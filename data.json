@@ -29,7 +29,11 @@
     ["The Force Awakens", 2015],
     ["Spider-Man", 2002],
     ["Stranger Things (1)", 2016],
-    ["Looper", 2012]
+    ["Looper", 2012],
+    ["The Prestige", 2005],
+    ["John Wick", 2014],
+    ["The Matrix", 1999],
+    ["Solaris", 2002]
   ],
   "links": [
     [
@@ -38,7 +42,8 @@
       [
         "Defib crew member and alien.",
         "White rat.",
-        "Freezing as you run out of oxygen."
+        "Freezing as you run out of oxygen.",
+        "Using a remote arm."
       ]
     ],
     [
@@ -157,8 +162,25 @@
       "A Quiet Place",
       "Looper",
       [
-        "Emily Blunt waving shotguns around on a farm while trying to keep her children safe."
+        "Emily Blunt waving shotguns around on a farm while trying to keep her children safe.",
+        "A child's toy making lots of noise and flashing lights at an inopportune time.",
+        "Emily Blunt hiding in a vault.",
+        "Jump scare feat. hand smacking against a translucent window."
       ]
+    ],
+    ["Pacific Rim", "Alien", ["Self-destruction must be triggered manually."]],
+    ["Life", "Looper", ["Slow-mo fountain of blood from floating corpse."]],
+    ["The Matrix", "John Wick", ["Guns. Lots of guns."]],
+    [
+      "Solaris",
+      "Aliens",
+      ["Chasing a strange child around an industrial complex."]
+    ],
+    ["Pacific Rim", "Aliens", ["Nuke the site from orbit."]],
+    [
+      "The Prestige",
+      "Alien: Covenant",
+      ["Cutting off your own extremities to match your double."]
     ]
   ]
 }
