@@ -1,39 +1,141 @@
 {
   "nodes": [
-    ["Life", 2017],
-    ["The Abyss", 1989],
-    ["Pacific Rim", 2013],
-    ["The Thing", 1982],
-    ["Alien", 1979],
-    ["TRON: Legacy", 2010],
-    ["Treasure Planet", 2005],
-    ["Alien vs. Predator", 2004],
-    ["Sunshine", 2007],
-    ["Alien: Covenant", 2017],
-    ["Avatar", 2009],
-    ["Aliens", 1986],
-    ["Terminator 2", 1991],
-    ["Alien 3", 1993],
-    ["Edge of Tomorrow", 2014],
-    ["Stargate", 1994],
-    ["Atlantis: The Lost Empire", 2001],
-    ["Get Out", 2017],
-    ["World War Z", 2013],
-    ["28 Days Later", 2002],
-    ["Jupiter Ascending", 2017],
-    ["Donnie Darko", 2001],
-    ["Sky High", 2005],
-    ["A Quiet Place", 2018],
-    ["Signs", 2002],
-    ["Raiders of the Lost Ark", 1982],
-    ["The Force Awakens", 2015],
-    ["Spider-Man", 2002],
-    ["Stranger Things (1)", 2016],
-    ["Looper", 2012],
-    ["The Prestige", 2005],
-    ["John Wick", 2014],
-    ["The Matrix", 1999],
-    ["Solaris", 2002]
+    [
+      "Life",
+      2017
+    ],
+    [
+      "The Abyss",
+      1989
+    ],
+    [
+      "Pacific Rim",
+      2013
+    ],
+    [
+      "The Thing",
+      1982
+    ],
+    [
+      "Alien",
+      1979
+    ],
+    [
+      "TRON: Legacy",
+      2010
+    ],
+    [
+      "Treasure Planet",
+      2005
+    ],
+    [
+      "Alien vs. Predator",
+      2004
+    ],
+    [
+      "Sunshine",
+      2007
+    ],
+    [
+      "Alien: Covenant",
+      2017
+    ],
+    [
+      "Avatar",
+      2009
+    ],
+    [
+      "Aliens",
+      1986
+    ],
+    [
+      "Terminator 2",
+      1991
+    ],
+    [
+      "Alien 3",
+      1993
+    ],
+    [
+      "Edge of Tomorrow",
+      2014
+    ],
+    [
+      "Stargate",
+      1994
+    ],
+    [
+      "Atlantis: The Lost Empire",
+      2001
+    ],
+    [
+      "Get Out",
+      2017
+    ],
+    [
+      "World War Z",
+      2013
+    ],
+    [
+      "28 Days Later",
+      2002
+    ],
+    [
+      "Jupiter Ascending",
+      2017
+    ],
+    [
+      "Donnie Darko",
+      2001
+    ],
+    [
+      "Sky High",
+      2005
+    ],
+    [
+      "A Quiet Place",
+      2018
+    ],
+    [
+      "Signs",
+      2002
+    ],
+    [
+      "Raiders of the Lost Ark",
+      1982
+    ],
+    [
+      "The Force Awakens",
+      2015
+    ],
+    [
+      "Spider-Man",
+      2002
+    ],
+    [
+      "Stranger Things (1)",
+      2016
+    ],
+    [
+      "Looper",
+      2012
+    ],
+    [
+      "The Prestige",
+      2005
+    ],
+    [
+      "John Wick",
+      2014
+    ],
+    [
+      "The Matrix",
+      1999
+    ],
+    [
+      "Solaris",
+      2002
+    ]
   ],
   "links": [
     [
@@ -49,12 +151,16 @@
     [
       "The Abyss",
       "Pacific Rim",
-      ["Large unseen thing approaches quickly on radar."]
+      [
+        "Large unseen thing approaches quickly on radar."
+      ]
     ],
     [
       "The Thing",
       "Life",
-      ["Unsuccessfully attack the alien with defib irons."]
+      [
+        "Unsuccessfully attack the alien with defib irons."
+      ]
     ],
     [
       "Alien",
@@ -64,9 +170,27 @@
         "Each human death transforms the creature into something bigger, smarter, and more dangerous."
       ]
     ],
-    ["Treasure Planet", "TRON: Legacy", ["The whole opening chase scene."]],
-    ["The Thing", "Alien vs. Predator", ["Antarctic horror feat. explosions."]],
-    ["Sunshine", "Life", ["Coolant (weak)."]],
+    [
+      "Treasure Planet",
+      "TRON: Legacy",
+      [
+        "The whole opening chase scene."
+      ]
+    ],
+    [
+      "The Thing",
+      "Alien vs. Predator",
+      [
+        "Antarctic horror feat. explosions."
+      ]
+    ],
+    [
+      "Sunshine",
+      "Life",
+      [
+        "Coolant (weak)."
+      ]
+    ],
     [
       "Aliens",
       "Avatar",
@@ -76,16 +200,27 @@
         "Money undercutting science."
       ]
     ],
-    ["Terminator 2", "Alien 3", ["Dangling by a chain over lava."]],
+    [
+      "Terminator 2",
+      "Alien 3",
+      [
+        "Dangling by a chain over lava."
+      ]
+    ],
     [
       "Terminator 2",
       "Edge of Tomorrow",
-      ["Woman in kevlar holding a big ass button."]
+      [
+        "Woman in kevlar holding a big ass button."
+      ]
     ],
     [
       "Aliens",
       "Edge of Tomorrow",
-      ["Bill Paxton.", "Unprofessional marines here to kill aliens."]
+      [
+        "Bill Paxton.",
+        "Unprofessional marines here to kill aliens."
+      ]
     ],
     [
       "Stargate",
@@ -104,12 +239,16 @@
     [
       "Aliens",
       "Jupiter Ascending",
-      ["The planet explodes and collapses all around us."]
+      [
+        "The planet explodes and collapses all around us."
+      ]
     ],
     [
       "Treasure Planet",
       "Aliens",
-      ["The planet explodes and collapses all around us."]
+      [
+        "The planet explodes and collapses all around us."
+      ]
     ],
     [
       "Jupiter Ascending",
@@ -118,7 +257,13 @@
         "The planet explodes collapses all around us, and you space-skate out of it."
       ]
     ],
-    ["Get Out", "Donnie Darko", ["Disassociation. Bad family vibes."]],
+    [
+      "Get Out",
+      "Donnie Darko",
+      [
+        "Disassociation. Bad family vibes."
+      ]
+    ],
     [
       "Atlantis: The Lost Empire",
       "Avatar",
@@ -128,21 +273,33 @@
         "Language criticism from a practical learner to a book learner."
       ]
     ],
-    ["A Quiet Place", "Signs", ["Corn."]],
+    [
+      "A Quiet Place",
+      "Signs",
+      [
+        "Corn."
+      ]
+    ],
     [
       "Alien: Covenant",
       "Sunshine",
-      ["There is an unidentified life form on the ship."]
+      [
+        "There is an unidentified life form on the ship."
+      ]
     ],
     [
       "Aliens",
       "Life",
-      ["Setting off the sprinkler system.", "\"How smart is this thing?\""]
+      [
+        "Setting off the sprinkler system.", "\"How smart is this thing?\""
+      ]
     ],
     [
       "The Force Awakens",
       "Raiders of the Lost Ark",
-      ["Big ball rolling toward you."]
+      [
+        "Big ball rolling toward you."
+      ]
     ],
     [
       "Sky High",
@@ -156,7 +313,10 @@
     [
       "Stranger Things (1)",
       "A Quiet Place",
-      ["An alien whose face opens up.", "Significant strings of lightbulbs."]
+      [
+        "An alien whose face opens up.",
+        "Significant strings of lightbulbs."
+      ]
     ],
     [
       "A Quiet Place",
@@ -168,19 +328,47 @@
         "Jump scare feat. hand smacking against a translucent window."
       ]
     ],
-    ["Pacific Rim", "Alien", ["Self-destruction must be triggered manually."]],
-    ["Life", "Looper", ["Slow-mo fountain of blood from floating corpse."]],
-    ["The Matrix", "John Wick", ["Guns. Lots of guns."]],
+    [
+      "Pacific Rim",
+      "Alien",
+      [
+        "Self-destruction must be triggered manually."
+      ]
+    ],
+    [
+      "Life",
+      "Looper",
+      [
+        "Slow-mo fountain of blood from floating corpse."
+      ]
+    ],
+    [
+      "The Matrix",
+      "John Wick",
+      [
+        "Guns. Lots of guns."
+      ]
+    ],
     [
       "Solaris",
       "Aliens",
-      ["Chasing a strange child around an industrial complex."]
+      [
+        "Chasing a strange child around an industrial complex."
+      ]
     ],
-    ["Pacific Rim", "Aliens", ["Nuke the site from orbit."]],
+    [
+      "Pacific Rim",
+      "Aliens",
+      [
+        "Nuke the site from orbit."
+      ]
+    ],
     [
       "The Prestige",
       "Alien: Covenant",
-      ["Cutting off your own extremities to match your double."]
+      [
+        "Cutting off your own extremities to match your double."
+      ]
     ]
   ]
 }
