@@ -22,7 +22,7 @@ d3.json('./data.json').then(function(rawData) {
         source,
         target,
         refs
-      ]) => ({ source, target, value: refs.length })),
+      ]) => ({ source, target, value: refs ? refs.length : 1 })),
     nodes: rawData.nodes
       .map(([name, year]) => ({ name, year }))
       .sort(({ year: year1 }, { year: year2 }) => year1 - year2)

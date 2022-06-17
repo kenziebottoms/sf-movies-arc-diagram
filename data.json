@@ -113,6 +113,18 @@
       2002
     ],
     [
+      "Spider-Man 2",
+      2004
+    ],
+    [
+      "Spider-Man 3",
+      2007
+    ],
+    [
+      "Spider-Man: Homecoming",
+      2017
+    ],
+    [
       "Stranger Things (1)",
       2016
     ],
@@ -135,6 +147,154 @@
     [
       "Solaris",
       2002
+    ],
+    [
+      "Alien: Resurrection",
+      1997
+    ],
+    [
+      "Fellowship of the Ring",
+      2001
+    ],
+    [
+      "Venom",
+      2018
+    ],
+    [
+      "Labyrinth",
+      1986
+    ],
+    [
+      "The Incredibles",
+      2004
+    ],
+    [
+      "I Am Mother",
+      2022
+    ],
+    [
+      "Nightmare On Elm Street",
+      1984
+    ],
+    [
+      "Sinbad",
+      2005
+    ],
+    [
+      "Shrek 2",
+      2004
+    ],
+    [
+      "Beauty and the Beast",
+      1991
+    ],
+    [
+      "Captain America: The First Avenger",
+      2011
+    ],
+    [
+      "Hellboy",
+      2004
+    ],
+    [
+      "The Shape of Water",
+      2017
+    ],
+    [
+      "The Batman",
+      2022
+    ],
+    [
+      "Annihilation",
+      2018
+    ],
+    [
+      "The Dark Knight",
+      2008
+    ],
+    [
+      "Rear Window",
+      1954
+    ],
+    [
+      "Megamind",
+      2010
+    ],
+    [
+      "The Cloverfield Paradox",
+      2018
+    ],
+    [
+      "Eraserhead",
+      1977
+    ],
+    [
+      "Dr. Strangelove",
+      1964
+    ],
+    [
+      "Kingsman: The Secret Service",
+      2014
+    ],
+    [
+      "Captain America: Civil War",
+      2016
+    ],
+    [
+      "Captain America: The Winter Soldier",
+      2014
+    ],
+    [
+      "Beetlejuice",
+      1988
+    ],
+    [
+      "Monsters, Inc.",
+      2001
+    ],
+    [
+      "Mad Max: Fury Road",
+      2015
+    ],
+    [
+      "Hunt for the Wilderpeople",
+      2016
+    ],
+    [
+      "Red Notice",
+      2021
+    ],
+    [
+      "Prometheus",
+      2012
+    ],
+    [
+      "National Treasure",
+      2004
+    ],
+    [
+      "Velvet Buzzsaw",
+      2019
+    ],
+    [
+      "Escape from New York",
+      1981
+    ],
+    [
+      "Fight Club",
+      1999
+    ],
+    [
+      "The Princess Bride",
+      1987
+    ],
+    [
+      "The Mummy",
+      1999
+    ],
+    [
+      "The Day After Tomorrow",
+      2004
     ]
   ],
   "links": [
@@ -291,7 +451,9 @@
       "Aliens",
       "Life",
       [
-        "Setting off the sprinkler system.", "\"How smart is this thing?\""
+        "Setting off the sprinkler system.",
+        "\"How smart is this thing?\"",
+        "Human-human-monster chain in low pressure"
       ]
     ],
     [
@@ -369,6 +531,259 @@
       [
         "Cutting off your own extremities to match your double."
       ]
+    ],
+    [
+      "Alien: Resurrection",
+      "Life",
+      [
+        "Lab sleeves"
+      ]
+    ],
+    [
+      "The Incredibles",
+      "Spider-Man 2",
+      [
+        "Stopping a train from the front and hanging off the track.",
+        "Doc Ock/omnitron arms"
+      ]
+    ],
+    [
+      "The Incredibles",
+      "Venom",
+      [
+        "Balloon explosion"
+      ]
+    ],
+    [
+      "I Am Mother",
+      "Alien",
+      [
+        "The finger-first shot of woman emerging from ladder",
+        "A computer named Mother"
+      ]
+    ],
+    [
+      "Spider-Man: Homecoming",
+      "Sky High",
+      [
+        "Somebody faking defeat and then pushing a bad button",
+        "Girlfriend working on homecoming",
+        "Date's parents being evil"
+      ]
+    ],
+    [
+      "Labyrinth",
+      "Sinbad",
+      [
+        "Tartarus",
+        "Glass bubble",
+        "The whole ending"
+      ]
+    ],
+    [
+      "Nightmare On Elm Street",
+      "Stranger Things (1)",
+      [
+        "Something pushing through stretchy walls"
+      ]
+    ],
+    [
+      "Fellowship of the Ring",
+      "Spider-Man: Homecoming",
+      [
+        "Finger burning in a ring"
+      ]
+    ],
+    [
+      "Spider-Man 3",
+      "Treasure Planet",
+      [
+        "Flying skateboard",
+        "I'm still here"
+      ]
+    ],
+    [
+      "Looper",
+      "Treasure Planet",
+      [
+        "JGL yelling on a floating vehicle"
+      ]
+    ],
+    [
+      "Shrek 2",
+      "Spider-Man",
+      [
+        "Upside down kiss"
+      ]
+    ],
+    [
+      "Shrek 2",
+      "Alien",
+      [
+        "Creature exploding from chest"
+      ]
+    ],
+    [
+      "Shrek 2",
+      "Fellowship of the Ring",
+      [
+        "Glowing text on ring"
+      ]
+    ],
+    [
+      "Beauty and the Beast",
+      "Shrek 2"
+    ],
+    [
+      "Hellboy",
+      "Captain America: The First Avenger"
+    ],
+    [
+      "Hellboy",
+      "Atlantis: The Lost Empire"
+    ],
+    [
+      "Hellboy",
+      "Treasure Planet"
+    ],
+    [
+      "Hellboy",
+      "Sinbad"
+    ],
+    [
+      "Hellboy",
+      "The Shape of Water"
+    ],
+    [
+      "The Batman",
+      "The Dark Knight"
+    ],
+    [
+      "The Batman",
+      "Rear Window"
+    ],
+    [
+      "Annihilation",
+      "Alien"
+    ],
+    [
+      "Annihilation",
+      "Aliens"
+    ],
+    [
+      "Annihilation",
+      "The Thing"
+    ],
+    [
+      "Atlantis: The Lost Empire",
+      "The Abyss"
+    ],
+    [
+      "Megamind",
+      "Sinbad"
+    ],
+    [
+      "Megamind",
+      "Treasure Planet"
+    ],
+    [
+      "Dr. Strangelove",
+      "Aliens"
+    ],
+    [
+      "Dr. Strangelove",
+      "The Abyss"
+    ],
+    [
+      "Dr. Strangelove",
+      "Kingsman: The Secret Service"
+    ],
+    [
+      "Captain America: Civil War",
+      "Dr. Strangelove"
+    ],
+    [
+      "Hunt for the Wilderpeople",
+      "Mad Max: Fury Road"
+    ],
+    [
+      "Hunt for the Wilderpeople",
+      "Fellowship of the Ring"
+    ],
+    [
+      "Prometheus",
+      "Treasure Planet"
+    ],
+    [
+      "Beetlejuice",
+      "Sinbad"
+    ],
+    [
+      "Beetlejuice",
+      "Monsters, Inc."
+    ],
+    [
+      "Beetlejuice",
+      "Venom"
+    ],
+    [
+      "I Am Mother",
+      "Aliens"
+    ],
+    [
+      "I Am Mother",
+      "Terminator 2"
+    ],
+    [
+      "Velvet Buzzsaw",
+      "The Cloverfield Paradox"
+    ],
+    [
+      "The Cloverfield Paradox",
+      "Alien"
+    ],
+    [
+      "The Cloverfield Paradox",
+      "The Abyss"
+    ],
+    [
+      "Red Notice",
+      "National Treasure"
+    ],
+    [
+      "Red Notice",
+      "Captain America: The Winter Soldier"
+    ],
+    [
+      "Red Notice",
+      "The Princess Bride"
+    ],
+    [
+      "Fight Club",
+      "Red Notice"
+    ],
+    [
+      "Red Notice",
+      "The Mummy"
+    ],
+    [
+      "Red Notice",
+      "Mad Max: Fury Road"
+    ],
+    [
+      "Eraserhead",
+      "The Thing"
+    ],
+    [
+      "The Thing",
+      "The Day After Tomorrow",
+      [
+        "Dogs ripping apart wire fence"
+      ]
+    ],
+    [
+      "Escape from New York",
+      "Captain America: The Winter Soldier"
     ]
   ]
 }
